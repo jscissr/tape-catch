@@ -1,37 +1,29 @@
 {
-  "name": "tape-catch",
+  "name": "tape-catch-onerror",
   "version": "1.0.3",
   "description": "a wrapper around tape that catches and reports exceptions",
   "main": "index.js",
-  "scripts": {
-    "copy-tape-tests": "bin/copy-tape-tests.js",
-    "test": "npm run copy-tape-tests && tap test/*.js"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/michaelrhodes/tape-catch.git"
+    "url": "https://github.com/jscissr/tape-catch.git"
   },
   "keywords": [
     "tape",
     "exception",
-    "catch"
+    "catch",
+    "onerror"
   ],
   "author": "Michael Rhodes",
+  "contributors": ["Jan Schär"],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/michaelrhodes/tape-catch/issues"
+    "url": "https://github.com/jscissr/tape-catch/issues"
   },
-  "homepage": "https://github.com/michaelrhodes/tape-catch",
+  "homepage": "https://github.com/jscissr/tape-catch",
   "peerDependencies": {
     "tape": "*"
   },
   "devDependencies": {
-    "concat-stream": "~1.4.7",
-    "cpr": "~0.3.2",
-    "falafel": "~0.3.1",
-    "mkdirp": "~0.5.0",
-    "run-series": "~1.0.2",
-    "tap": "~0.5.0",
-    "tape": "git://github.com/michaelrhodes/tape#no-res-at"
+    "tape": "~3.5.0"
   }
 }

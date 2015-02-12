@@ -8,6 +8,8 @@ exports.Test.prototype._end = (
   exports.Test.prototype.end
 )
 
+var currentTest
+
 exports.Test.prototype.run = function () {
   if (!this._cb || this._skip) {
     return this._end()
@@ -21,5 +23,17 @@ exports.Test.prototype.run = function () {
     this._end()
     return
   }
-  this.emit('run') 
+  this.emit('run')
+
+  currentTest = this
+}
+
+if (typeof window !== 'undefined') {
+  window.onerror = function(message, file, line, column, error) {
+    if (currentTest) {
+      currentTest.fail('window.onerror!! file: ' + file + ' line: ' + line +
+        ' col: ' + column + (error ? ' stack : ' + error.stack : ''))
+      currentTest.end()
+    }
+  }
 }
