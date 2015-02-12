@@ -29,7 +29,7 @@ test('cause an exception', function (assert) {
 ```
 TAP version 13
 # cause an exception
-not ok 1 window.onerror!! file: http://localhost:49720/__zuul/test-bundle.js line: 4176 col: 69 stack : ReferenceError: asdf is not defined at http://localhost:49720/__zuul/test-bundle.js:4176:317
+not ok 1 window.onerror! file: http://localhost:49720/__zuul/test-bundle.js line:4176 col:69 stack: ReferenceError: asdf is not defined at http://localhost:49720/__zuul/test-bundle.js:4176:317
   ---
     operator: fail
   ...

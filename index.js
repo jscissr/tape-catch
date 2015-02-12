@@ -31,8 +31,8 @@ exports.Test.prototype.run = function () {
 if (typeof window !== 'undefined') {
   window.onerror = function(message, file, line, column, error) {
     if (currentTest) {
-      currentTest.fail('window.onerror!! file: ' + file + ' line: ' + line +
-        ' col: ' + column + (error ? ' stack : ' + error.stack : ''))
+      currentTest.fail('window.onerror! file: ' + file + ' line:' + line +
+        ' col:' + column + (error ? ' stack: ' + error.stack : ''))
       currentTest.end()
     }
   }
