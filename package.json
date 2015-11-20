@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jscissr/tape-catch.git"
+    "url": "https://github.com/jscissr/tape-catch-onerror.git"
   },
   "keywords": [
     "tape",
@@ -17,9 +17,9 @@
   "contributors": ["Jan Schär"],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jscissr/tape-catch/issues"
+    "url": "https://github.com/jscissr/tape-catch-onerror/issues"
   },
-  "homepage": "https://github.com/jscissr/tape-catch",
+  "homepage": "https://github.com/jscissr/tape-catch-onerror",
   "peerDependencies": {
     "tape": "*"
   },
